@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+
+/* body {
+    font-family: 'Cinzel', serif;
+  } */
+
+.booking {
+    font-family: 'Nunito Sans' sans-serif;
+    background-color: white; /* White background */
+    position: relative; /* Relative positioning */
+    z-index: 1; /* Ensure it appears above the background */
+    top: -100px; /* Adjust this value to overlap with the hero */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    padding: 1.5rem 2rem; /* Padding inside the container */
+    margin: 0 auto; /* Centering the container */
+    /* min-height: 90%; Default width */
+    height: 10rem;
+    max-width: 900px; /* Max width for larger screens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
+    border-radius: 1px; /* Rounded corners */
+    justify-items: center;
+    align-items: center;
+}
+
+
+.booking>.date_outer {
+    width: 100%;
+    display: grid;
+    cursor: pointer;
+    grid-template-columns: repeat(2, 1fr);
+}
+.w-full {
+    width: 100%;
+}
+.flex {
+    display: flex;
+}
+
+.checkIn.book_grid_items {
+    padding: 0 1rem;
+}
+
+
+.span_book {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 130%;
+}
+.span_book {
+    margin-bottom: 1.2rem;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+
+
+
+
+.span_book img {
+    width: 1.0rem;
+    height: 1.1rem;
+    margin-right: .7rem;
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+.b_right {
+    border-right: 1px solid rgba(161, 175, 186, .6);
+    padding: 0 3rem;
+}
+
+
+.book_grid_items .number {
+    font-family: Cinzel, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: .8;
+    text-align: right;
+    
+}
+
+.book_grid_items .date {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7rem;
+    text-align: right;
+  
+    
+}
+
+
+
+
+
+
+
+
+
+.justify-center {
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex {
+    display: flex;
+}
+
+.about_adults_grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    place-items: center;
+    width: 20vw;
+}
+
+.person_title {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+
+.about_adults_grid_button {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    place-items: center;
+    width: 100%;
+}
+
+
+
+
+
+
+.p_icon {
+    width: 17.82px;
+    height: 17.82px;
+    line-height: 17.82px;
+    background: #d9d9d9;
+    text-align: center;
+    border-radius: 50%;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+.ml-2 {
+    margin-left: .5rem;
+}
+
+
+
+.p_number {
+    font-family: Cinzel;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+
+
+.p_icon {
+    width: 17.82px;
+    height: 17.82px;
+    line-height: 17.82px;
+    background: #d9d9d9;
+    text-align: center;
+    border-radius: 50%;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.mr-2 {
+    margin-right: .5rem;
+}
+
+
+
+
+@media (min-width: 690px) {
+    .sm\:justify-center {
+        justify-content: center;
+    }
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+
+
+
+
+
+
+/* .bookNow>.btn-priamry {
+    min-width: 10.8rem;
+    height: 5.2rem;
+    font-family: Nunito Sans;
+    background: var(--theme-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+} */
+button, [role=button] {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+button{
+    margin-left: 1rem;
+    border: none;
+    font-family: Nunito Sans;
+    font-size: 0.7rem;
+    color: aliceblue;
+    background-color: rgb(20, 116, 155);
+    width: 10rem;
+    height: 2.2rem;
+   
+    cursor: pointer;
+   
+    
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (min-width: 992px) {
+    .booking {
+        width: 80%; /* Adjusted width for larger screens */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .booking {
+        width: 87%; /* Adjusted width for medium screens */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .booking {
+        width: 90%; /* Adjusted width for smaller screens */
+        padding: 1rem; /* Adjusted padding for smaller screens */
+    }
+}
+
+/* Global Styles */
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    text-decoration: none; /* Remove text decoration */
+}

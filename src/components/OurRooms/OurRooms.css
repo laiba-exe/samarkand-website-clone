@@ -1,0 +1,129 @@
+.rooms {
+    width: calc(100vw - 12.5%);
+    margin: 0 0 0 auto;
+    position: relative;
+}
+
+.pt-18 {
+    padding-top: 18rem;
+}
+.rooms_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.pb-3 {
+    padding-bottom: .75rem;
+}
+
+.span_title {
+    font-family: Nunito Sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 100%;
+    margin-bottom: .5em;
+    letter-spacing: .5em;
+    color: teal;
+}
+
+.mb-4 {
+    margin-bottom: 4rem !important;
+}
+.section_heading {
+    font-family: Cinzel, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    letter-spacing: .01em;
+    color: #27292d;
+    position: relative;
+}
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+
+.rooms_container_des {
+    position: relative;
+    z-index: 2;
+    height: 35vw;
+    overflow-y: scroll;
+}
+
+
+.individual_rooms {
+    display: flex;
+    transition: .2s ease-in-out;}
+
+   
+
+.bedroomimg{
+    background-image: url('D:/samarkand-clone/public/assets/room1.jpeg');
+}
+.individual_rooms .img_container {
+    width: 35%;
+    height: 7vw;
+    background-size: cover;
+    margin: 1rem;
+    background-position: center;
+}
+
+
+.text_container {
+    width: 25%;
+}
+.justify-center {
+    justify-content: center;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex {
+    display: flex;
+}
+
+
+.individual_rooms h3 {
+    font-family: Nunito Sans, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 100%;
+    letter-spacing: .01em;
+    color: var(--theme-black);
+}
+
+.individual_rooms p {
+    font-family: Nunito Sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    color: var(--theme-black);
+    display: flex;
+    flex-direction: row;
+}
+
+.img-container #libraryimg{
+    background-image: url('D:/samarkand-clone/public/assets/room2.jpeg');
+}ibrar
+
+#gardenimg{
+    background-image: url('D:/samarkand-clone/public/assets/room3.jpeg');
+}
+
+#nestimg{
+    background-image: url('D:/samarkand-clone/public/assets/room4.jpeg');
+}
+
+
+.rooms_grid_item2 {
+    background-image: url('D:/samarkand-clone/public/assets/room4.jpeg');
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    /* z-index: 2; */
+}

@@ -1,0 +1,59 @@
+
+
+.experience_grid {
+    overflow: hidden;
+    height: 26rem;
+    background-image: url(D:/samarkand-clone/public/assets/dining.png);
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+.w-full {
+    width: 100%;
+}
+
+.white-bg{
+    background-color: white !important;
+    width: 31vw;
+    height: 26rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    right: 9vw;
+    padding: 1.5rem; 
+}
+@media only screen and (min-width: 768px) {
+    .experience_item_2 {
+        width: 35vw;
+    }
+}
+
+
+.section_heading {
+   
+    color: #27292d;
+    position: relative;
+}
+.mb-3 {
+    font-family: Cinzel;
+    font-size: 2.4rem;
+    letter-spacing: .01em;
+    color: #27292d;
+    position: relative;
+    font-weight: 100;
+    margin-bottom: 3rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.paragraphs {
+    font-family: Nunito Sans, sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 0.7rem;
+    line-height: 130%;
+    color: gray;
+}

@@ -1,0 +1,62 @@
+.about-us {
+    background-size: cover; 
+    background-position: absolute; 
+   top: -130px;
+    width: 100vw; 
+    height: 1100px; 
+    /* padding: 4rem 2rem;  */
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    z-index: 1;
+}
+
+
+.grid {
+    /* padding-top: 18rem; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+.grid_item-1 {
+    /* background-image: url(/assets/about_item-b2a042cc.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* height: 40rem; */
+    position: relative;
+    width: 100%;
+}
+
+.grid_item-1 img {
+    object-fit: cover;
+
+}
+
+.grid_item-2 {
+    background-color: rgb(215, 230, 228);
+    position: absolute;
+    width: 50%;
+    
+    padding: 2rem;
+    top: 45%;
+    left: 35%;
+}
+
+.section_heading {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 4rem;
+    letter-spacing: .01em;
+    color: #27292d; /* Actual color instead of var */
+    position: relative;
+}
+
+.paragraphs {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 180%;
+    color: #333; /* Replace with your actual text color */
+}

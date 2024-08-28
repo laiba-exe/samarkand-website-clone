@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+body {
+    overflow-x: hidden;
+  }
+
+.hero {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 90vh;
+    z-index: 1;
+    position: relative;
+}
+.main-bg {
+    width: 100%;
+    height: 100%;
+}
+.main-bg img {
+  
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.highlighter {
+    background: linear-gradient(252.69deg, rgba(114, 139, 129, .85), rgba(95, 144, 157, .85));
+    height: 1.4rem;
+    width: 100vw;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 10%; 
+    left: 10%; 
+}
+
+.navbar {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 1001;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    display: flex; 
+}
+
+.nav-links li a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links li a:hover {
+    color: teal;
+    border-bottom: 2px solid teal;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    font-family: 'Cinzel', serif;
+    font-weight: 400; 
+    font-size: 1.7rem;
+    line-height: 180%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
