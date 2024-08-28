@@ -1,6 +1,17 @@
 import React from 'react';
 import './Perfect.css';
 import { specialbgdesk, destination, destination2 } from '../../assets';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+
+import { slide_image_1, slide_image_2, slide_image_3, slide_image_4, slide_image_5 } from '../../assets';
+
 
 const Perfect = () => {
     return (
@@ -12,34 +23,59 @@ const Perfect = () => {
             <h2 className='section_heading text-center mb-4'>What Makes Us Special</h2>
             <p className='paragraphs text-center mx-[5rem]'>Enjoy top notch amenities. Spend the afternoon taking in the serene surroundings from our sparkling swimming pool. Challenge friends to a game of tennis on our private court. Or relax and unwind in our one-of-kind cave hangout.</p>
         </div>
-        <div className='mt-6'>
-            <div className='swiper swiper_container swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress'>
-                <div className='swiper-wrapper'>
-                    <div className='swiper-slide swiper-slide-visible swiper-slide-prev'></div>
-                    <div className='swiper-slide swiper-slide-visible swiper-slide-active'></div>
-                    <div className='swiper-slide swiper-slide-visible swiper-slide-next'></div>
-                    <div className='swiper-slide' ></div>
-                    <div className='swiper-slide'></div>
-                </div>
-                <div className='slider-controler'>
-                    <div className='swiper-button-prev slider-arrow'></div>
-                    <div className='swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal'>
-                        <span className='swiper-pagination-bullet swiper-pagination-bullet-active'></span>
-                        <span className='swiper-pagination-bullet'></span>
-                        <span className='swiper-pagination-bullet'></span>
-                        <span className='swiper-pagination-bullet'></span>
-                        <span className='swiper-pagination-bullet'></span>
-                    </div>
-                    <div className='swiper-button-next slider-arrow'></div>
-                </div>
-            </div>
-            <div className=''>
-                
-            </div>
-            <div className=''>
-                
-            </div>
+    
+
+         <div className="containerr">
+        <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 93,
+          depth: 120,
+          modifier: 2.5,
+        }}
+        pagination={{ el: '.swiper-pagination', clickable: true }}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          clickable: true,
+        }}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="swiper_container"
+      >
+        <SwiperSlide>
+          <img src={slide_image_1} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_2} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_3} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_4} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_image_5} alt="slide_image" />
+        </SwiperSlide>
+        
+
+        <div className="slider-controler">
+        <div className="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </div>
+          <div className="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div> 
+          
+          <div className="swiper-pagination"></div>
         </div>
+      </Swiper>
+    </div> 
         
       </div>
       <div className="relative mems-outer mt-24">

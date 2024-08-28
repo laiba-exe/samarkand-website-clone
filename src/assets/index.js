@@ -19,6 +19,12 @@ import callicon from './callicon.png';
 import ascendant from './ascendant.png';
 import person from './person.png';
 import calendar from './calendar.png';
+import slide_image_1 from './slide_image_1.jpeg';
+import slide_image_2 from './slide_image_2.jpeg';
+import slide_image_3 from './slide_image_3.jpeg';
+import slide_image_4 from './slide_image_4.jpeg';
+import slide_image_5 from './slide_image_5.jpeg';
+
 
 export {
     mainImage,
@@ -41,5 +47,10 @@ export {
     callicon, 
     ascendant, 
     person,
-    calendar
+    calendar, 
+    slide_image_1,
+    slide_image_2,
+    slide_image_3,
+    slide_image_4,
+    slide_image_5
 };

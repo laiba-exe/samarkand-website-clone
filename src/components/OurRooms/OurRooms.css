@@ -10,18 +10,19 @@
 .rooms_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    gap: 2rem;
 }
 
+
 .pb-3 {
-    padding-bottom: .75rem;
+    padding-bottom: 0.1rem !important;
 }
 
 .span_title {
     font-family: Nunito Sans, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 0.7rem;
     line-height: 100%;
     margin-bottom: .5em;
     letter-spacing: .5em;
@@ -29,27 +30,25 @@
 }
 
 .mb-4 {
-    margin-bottom: 4rem !important;
+    margin-bottom: rem !important;
 }
 .section_heading {
     font-family: Cinzel, serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 2.4rem;
     letter-spacing: .01em;
     color: #27292d;
     position: relative;
 }
-.mb-4 {
-    margin-bottom: 1rem;
-}
+
 
 
 .rooms_container_des {
     position: relative;
     z-index: 2;
-    height: 35vw;
-    overflow-y: scroll;
+    height: 38vw;
+    /* overflow-y: scroll; */
 }
 
 
@@ -57,22 +56,36 @@
     display: flex;
     transition: .2s ease-in-out;}
 
-   
+ .individual_rooms:hover {
+     background-color: rgb(208, 224, 224);
+      }
+      
+.individual_rooms:after {
+    width: .5rem !important;
+    content: "";
+    background-color: #f7fbff;
+    left: 0;
+    position: relative;
+    display: block;
+    }
 
-.bedroomimg{
-    background-image: url('D:/samarkand-clone/public/assets/room1.jpeg');
-}
+.individual_rooms:hover::after {  
+    background-color: #024a58;     
+    }
+
+
 .individual_rooms .img_container {
     width: 35%;
     height: 7vw;
+    background-image: url('D:/samarkand-clone/public/assets/room1.jpeg');
     background-size: cover;
-    margin: 1rem;
+    margin: 0.7rem;
     background-position: center;
 }
 
 
 .text_container {
-    width: 25%;
+    width: 75%;
 }
 .justify-center {
     justify-content: center;
@@ -89,33 +102,31 @@
     font-family: Nunito Sans, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 100%;
     letter-spacing: .01em;
-    color: var(--theme-black);
 }
 
 .individual_rooms p {
     font-family: Nunito Sans, sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 0.7rem;
+    font-weight: 100;
+    font-size: 0.8rem;
     margin-top: 1rem;
     margin-right: 2rem;
-    color: var(--theme-black);
     display: flex;
     flex-direction: row;
 }
 
-.img-container #libraryimg{
+.img_container #libraryimg{
     background-image: url('D:/samarkand-clone/public/assets/room2.jpeg');
-}ibrar
+}
 
-#gardenimg{
+.img_container #gardenimg{
     background-image: url('D:/samarkand-clone/public/assets/room3.jpeg');
 }
 
-#nestimg{
+.img_container #nestimg{
     background-image: url('D:/samarkand-clone/public/assets/room4.jpeg');
 }
 
@@ -125,5 +136,5 @@
     background-size: cover;
     position: relative;
     background-position: center;
-    /* z-index: 2; */
+    z-index: 2; 
 }

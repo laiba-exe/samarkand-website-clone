@@ -1,6 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
 
+.hero {
+    position: relative;
+    /* height: calc(69vw - 18rem); */
+    height: 85vh;
+    background:  linear-gradient(252.69deg, rgba(120, 149, 137, 0.5), rgba(140, 182, 193, 0.5)),url(D:/samarkand-master/samarkand-master/samarkand-master/src/assets/main.png);
+    
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 5px #07050540;
+}
+.w-full {
+    width: 100%;
+}
+
+
+.hero .highlighter {
+    background: linear-gradient(252.69deg, rgba(114, 139, 129, .85), rgba(95, 144, 157, .85));
+    height: 2rem;
+    width: 100vw;
+    position: relative;
+    z-index: 1000;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, .25));
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 87%;
+    }
+}
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media (min-width: 690px) {
+    .container {
+        max-width: 690px;
+    }
+}
+.container {
+    width: 100%;
+}
+
+
+
+
+.topbar {
+    padding-top: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+
+
+.topbar .logo {
+    width: clamp(13rem + 1vw, 17.1rem, 18rem + 1vw);
+    height: clamp(8rem + 1vw, 9rem, 10rem + 1vw);
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+}
+
+ol, ul, menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar .menu li {
+    display: inline-block;
+    padding-left: 2.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.topbar .menu li a {
+    color: white;
+    font-size: 1rem;
+    font-family: Nunito Sans, sans-serif;
+    font-weight: 400;
+    position: relative;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    text-decoration: none;
+    transition: all .3s ease;}
+
+    .menu li a:hover {
+        color: teal;
+        border-bottom: 2px solid teal;
+    }
+
+.main_heading{
+    position: relative;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    font-family: 'Cinzel', serif;
+    font-weight: 600; 
+    font-size: 2.4rem;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* 
 body {
     overflow-x: hidden;
   }
@@ -79,7 +203,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 65%;
     font-family: 'Cinzel', serif;
     font-weight: 400; 
     font-size: 1.7rem;
@@ -89,4 +213,4 @@ body {
     text-transform: uppercase;
     color: white;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+} */

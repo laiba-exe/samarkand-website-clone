@@ -12,7 +12,9 @@ const OurRooms = () => {
                 <h2 className='section_heading mb-4 mb-sm-0'>Our Rooms</h2>
                 <div className='rooms_container_des'>
                     <div className='individual_rooms'>
-                        <div className='img_container' id='bedroomimg'></div>
+                        <div className='img_container' id='bedroomimg'>
+                            
+                        </div>
                             <div className='flex flex-col justify-center text_container'>
                                 <h3>Master Bedroom</h3>
                                 <p>The master bedroom in this heritage hotel exudes an aura of timeless elegance and luxury.</p>  
