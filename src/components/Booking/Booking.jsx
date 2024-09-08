@@ -33,11 +33,11 @@ const Booking = () => {
             </div>
             <div className='book_grid_items'>
                 <div>
-                    <div className='flex span_book items-center book_grid_items'>
+                    <div className='persons flex span_book items-center book_grid_items'>
                         <img src={person} alt="" />
                         <div>Persons</div>
                     </div>
-                    <div className='flex flex-col justify-center items-center'>
+                    <div className='main-grid flex flex-col justify-center items-center'>
                         <div className='about_adults_grid'>
                             <div className='person_title'>Adults</div>
                             <div className='about_adults_grid_button'>

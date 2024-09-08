@@ -1,6 +1,6 @@
 import React from 'react';
-import './Footer.css'; 
-import { mailicon, locationicon, callicon, logoBlue, specialbgdesk, insta, ascendant} from '../../assets';
+import './Footer.css';
+import { mailicon, locationicon, callicon, logoBlue, specialbgdesk, insta, ascendant } from '../../assets';
 
 const Footer = () => {
   return (
@@ -37,7 +37,39 @@ const Footer = () => {
           <div className="footer_base_top">
             <div className="base_footer_left">
               <img src={logoBlue} alt="Samarkand House Logo" className="" />
-              <p>An architectural wonder immersed in the serene pine forests of the Murree Hills, Samarkand House offers your group a convenient and luxurious retreat.</p>
+              <div className="social_icons-mob">
+              <a href="#">
+                <img src={insta} className='instaimg' alt="Instagram" />
+              </a>
+            </div>
+              <p className='architectural'>An architectural wonder immersed in the serene pine forests of the Murree Hills, Samarkand House offers your group a convenient and luxurious retreat.</p>
+            </div>
+            <div className="contact-bar-mob">
+              <div className="container-align">
+                <div className="footer_grid">
+                  <div className='contact-sub'>
+                  <a href="tel:+923011001984" className="footer_grid_item">
+                    <span className="icon">
+                      <img src={callicon} alt="Phone" className="w-20" />
+                    </span>
+                    <span className='smalltext'>+92 301 1001984</span>
+                  </a>
+                  <a href="#" className="footer_grid_item">
+                    <span className="icon">
+                      <img src={locationicon} alt="Location" className="w-20" />
+                    </span>
+                    <span className='smalltext'>Murree Hills, Islamabad</span>
+                  </a>
+                  </div>
+                  <a href="mailto:info@samarkandhouse.com" className="footer_grid_item">
+                    <span className="icon">
+                      <img src={mailicon} alt="Email" className="w-20" />
+                    </span>
+                    <span className='smalltext'>info@samarkandhouse.com</span>
+                  </a>
+
+                </div>
+              </div>
             </div>
             <div className="base_footer_right">
               <div className="property">
@@ -70,7 +102,7 @@ const Footer = () => {
           <div className="footer_base_bottom">
             <div className="social_icons">
               <a href="#">
-                <img src={insta} className='instaimg' alt="Instagram" /> 
+                <img src={insta} className='instaimg' alt="Instagram" />
               </a>
             </div>
             <div className="flex_items_end">

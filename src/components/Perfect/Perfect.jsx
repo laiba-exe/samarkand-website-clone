@@ -21,7 +21,7 @@ const Perfect = () => {
       <div className='special_container w-full'>
         <div className='container'>
             <h2 className='section_heading text-center mb-4'>What Makes Us Special</h2>
-            <p className='paragraphs text-center mx-[5rem]'>Enjoy top notch amenities. Spend the afternoon taking in the serene surroundings from our sparkling swimming pool. Challenge friends to a game of tennis on our private court. Or relax and unwind in our one-of-kind cave hangout.</p>
+            <p className='paragraphs mobile-text text-center mx-[5rem]'>Enjoy top notch amenities. Spend the afternoon taking in the serene surroundings from our sparkling swimming pool. Challenge friends to a game of tennis on our private court. Or relax and unwind in our one-of-kind cave hangout.</p>
         </div>
     
 
@@ -80,7 +80,7 @@ const Perfect = () => {
       </div>
       <div className="relative mems-outer mt-24">
       <div className='memories-container container'>
-        <h2 className='section-heading text-center mb-4'> Perfect For Making Memories</h2>
+        <h2 className='section-heading section-main-pr text-center mb-4'> Perfect For Making Memories</h2>
         <div className='my-9 mem_slider_container'>
             <div className='flex-column'>
             <img src={destination}  className='img1'  alt="" />
@@ -95,8 +95,11 @@ const Perfect = () => {
                 </div>
             </div>
             <div className='flex-column'>
-                <p className='paragraphs text-center  mx-[5rem] mb-4 mt-4'>
+                <p className='paragraphs create-para text-center  mx-[5rem] mb-4 mt-4'>
                 Create lasting memories etched in nature's wonder and our family's multi-generational unique sense of place. Stunning surroundings. Serentiy. Unforgettable experiences you'll treasure for a lifetime.
+                </p>
+                <p className='paragraphs create-para-mob text-center  mx-[5rem] mb-4 mt-4'>
+                Create lasting memories etched in nature's wonder and our family's multi-generational
                 </p>
             </div>
         </div>

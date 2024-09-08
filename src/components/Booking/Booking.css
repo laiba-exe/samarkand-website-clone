@@ -284,7 +284,7 @@ button{
 
 @media only screen and (max-width: 600px) {
     .booking {
-        width: 90%; /* Adjusted width for smaller screens */
+        /* width: 90%;  */
         padding: 1rem; /* Adjusted padding for smaller screens */
     }
 }
@@ -298,4 +298,53 @@ button{
 
 * {
     text-decoration: none; /* Remove text decoration */
+}
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+
+
+    .booking {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2rem;
+        height: 22rem;
+        width: 80%;
+        position: relative;
+    }
+
+    .booking>.date_outer {
+       /* margin: 0;
+       width: 0; */
+    }
+    .checkIn.book_grid_items{
+        padding: 0 1rem;
+
+    }
+    .b_right{
+        padding: 0 25px  0 0;
+    }
+    .checkOut .b_right{
+        border: none;
+    }
+   
+    .persons{
+        position: absolute;
+        left: 30px;
+    }
+    .about_adults_grid{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        place-items: center;
+        width: 40vw;
+    }
+    .main-grid {
+        position: absolute;
+        right: 65px;
+        margin-top: 28px;
+
+    }
+    .bookNow {
+        margin-top: 55px;
+    }
 }

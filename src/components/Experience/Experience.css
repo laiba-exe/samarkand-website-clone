@@ -3,7 +3,7 @@
 .experience_grid {
     overflow: hidden;
     height: 26rem;
-    background-image: url(D:/samarkand-clone/public/assets/dining.png);
+    background-image: url('../../assets/dining.png');
     background-size: cover;
     position: relative;
     z-index: 2;
@@ -56,4 +56,22 @@
     font-size: 0.7rem;
     line-height: 130%;
     color: gray;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+
+    .experience_grid{
+        height: 14rem !important;
+    }
+    .white-bg{
+        width: 50vw;
+    }
+    .section-last  {
+        font-size: 20px;
+    }
+    .section-last-two{
+        margin-top: -40px;
+        font-size: 13px !important;
+    }
 }

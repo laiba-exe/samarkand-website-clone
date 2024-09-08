@@ -5,12 +5,13 @@
     position: relative;
     /* height: calc(69vw - 18rem); */
     height: 85vh;
-    background:  linear-gradient(252.69deg, rgba(120, 149, 137, 0.5), rgba(140, 182, 193, 0.5)),url(D:/samarkand-master/samarkand-master/samarkand-master/src/assets/main.png);
-    
+    background: linear-gradient(252.69deg, rgba(120, 149, 137, 0.5), rgba(140, 182, 193, 0.5)), url('../../assets/main.png');
+
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 5px #07050540;
 }
+
 .w-full {
     width: 100%;
 }
@@ -39,16 +40,19 @@
     max-width: 75%;
     margin: 0 auto;
 }
+
 @media (min-width: 768px) {
     .container {
         max-width: 768px;
     }
 }
+
 @media (min-width: 690px) {
     .container {
         max-width: 690px;
     }
 }
+
 .container {
     width: 100%;
 }
@@ -70,15 +74,27 @@
     width: clamp(13rem + 1vw, 17.1rem, 18rem + 1vw);
     height: clamp(8rem + 1vw, 9rem, 10rem + 1vw);
 }
-img, video {
+
+img,
+video {
     max-width: 100%;
     height: auto;
 }
-img, svg, video, canvas, audio, iframe, embed, object {
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
     display: block;
 }
 
-ol, ul, menu {
+ol,
+ul,
+menu {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -100,21 +116,22 @@ ol, ul, menu {
     text-transform: capitalize;
     letter-spacing: .5px;
     text-decoration: none;
-    transition: all .3s ease;}
+    transition: all .3s ease;
+}
 
-    .menu li a:hover {
-        color: teal;
-        border-bottom: 2px solid teal;
-    }
+.menu li a:hover {
+    color: teal;
+    border-bottom: 2px solid teal;
+}
 
-.main_heading{
+.main_heading {
     position: relative;
     top: 24%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
     font-family: 'Cinzel', serif;
-    font-weight: 600; 
+    font-weight: 600;
     font-size: 2.4rem;
     line-height: 130%;
     text-align: center;
@@ -214,3 +231,25 @@ body {
     color: white;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 } */
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    .hero {
+        max-height: 450px;
+    }
+
+    .logo_container {
+        width: 100px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .main_heading {
+        width: 80%;
+        font-size: 17px;
+        top: 15%;
+    }
+}

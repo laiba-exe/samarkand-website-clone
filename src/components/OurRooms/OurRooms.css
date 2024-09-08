@@ -7,6 +7,7 @@
 .pt-18 {
     padding-top: 18rem;
 }
+
 .rooms_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -32,6 +33,7 @@
 .mb-4 {
     margin-bottom: rem !important;
 }
+
 .section_heading {
     font-family: Cinzel, serif;
     font-style: normal;
@@ -54,12 +56,13 @@
 
 .individual_rooms {
     display: flex;
-    transition: .2s ease-in-out;}
+    transition: .2s ease-in-out;
+}
 
- .individual_rooms:hover {
-     background-color: rgb(208, 224, 224);
-      }
-      
+.individual_rooms:hover {
+    background-color: rgb(208, 224, 224);
+}
+
 .individual_rooms:after {
     width: .5rem !important;
     content: "";
@@ -67,17 +70,17 @@
     left: 0;
     position: relative;
     display: block;
-    }
+}
 
-.individual_rooms:hover::after {  
-    background-color: #024a58;     
-    }
+.individual_rooms:hover::after {
+    background-color: #024a58;
+}
 
 
 .individual_rooms .img_container {
     width: 35%;
     height: 7vw;
-    background-image: url('D:/samarkand-clone/public/assets/room1.jpeg');
+    background-image: url('../../assets/room2.jpeg');
     background-size: cover;
     margin: 0.7rem;
     background-position: center;
@@ -87,12 +90,15 @@
 .text_container {
     width: 75%;
 }
+
 .justify-center {
     justify-content: center;
 }
+
 .flex-col {
     flex-direction: column;
 }
+
 .flex {
     display: flex;
 }
@@ -118,23 +124,92 @@
     flex-direction: row;
 }
 
-.img_container #libraryimg{
-    background-image: url('D:/samarkand-clone/public/assets/room2.jpeg');
+.img_container #libraryimg {
+    background-image: url('../../assets/room2.jpeg');
 }
 
-.img_container #gardenimg{
-    background-image: url('D:/samarkand-clone/public/assets/room3.jpeg');
+.img_container #gardenimg {
+    background-image: url('../../assets/room3.jpeg');
 }
 
-.img_container #nestimg{
-    background-image: url('D:/samarkand-clone/public/assets/room4.jpeg');
+.img_container #nestimg {
+    background-image: url('../../assets/room4.jpeg');
 }
-
 
 .rooms_grid_item2 {
-    background-image: url('D:/samarkand-clone/public/assets/room4.jpeg');
+    background-image: url('../../assets/room4.jpeg');
     background-size: cover;
     position: relative;
     background-position: center;
-    z-index: 2; 
+    z-index: 2;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .section_heading {
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+    .grid_item-2 p {
+        font-size: 9px !important;
+        text-align: center;
+    }
+
+    .pt-18 {
+        padding-top: 36px !important;
+    }
+
+    .individual_rooms {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: top;
+        align-items: center;
+    }
+
+    .rooms_container_des {
+        height: auto;
+        display: grid;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        row-gap: 1rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: -15px 27px 0 -18px;
+    }
+
+    .rooms_grid_item2 {
+        display: none;
+    }
+
+    .individual_rooms .img_container {
+        width: 80%;
+        height: 20vw;
+        background-size: cover;
+        margin-bottom: 1rem;
+        background-position: center;
+    }
+
+    .rooms_grid {
+        display: block;
+    }
+
+    .individual_rooms h3 {
+        font-size: 12px;
+    }
+
+    .individual_rooms p {
+        font-size: 8px;
+        text-align: center;
+        margin: 5px 0 0 0 !important;
+
+    }
+
+    .rooms-hd {
+        text-align: left;
+    }
+    .span_title {
+        margin-left: -9px;
+    }
 }
