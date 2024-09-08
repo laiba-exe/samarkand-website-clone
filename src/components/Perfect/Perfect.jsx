@@ -95,12 +95,12 @@ const Perfect = () => {
                 </div>
             </div>
             <div className='flex-column'>
-                <p className='paragraphs create-para text-center  mx-[5rem] mb-4 mt-4'>
+                <p className='paragraphs create-para text-center'>
                 Create lasting memories etched in nature's wonder and our family's multi-generational unique sense of place. Stunning surroundings. Serentiy. Unforgettable experiences you'll treasure for a lifetime.
                 </p>
-                <p className='paragraphs create-para-mob text-center  mx-[5rem] mb-4 mt-4'>
+                {/* <p className='paragraphs create-para-mob text-center  mx-[5rem] mb-4 mt-4'>
                 Create lasting memories etched in nature's wonder and our family's multi-generational
-                </p>
+                </p> */}
             </div>
         </div>
       </div>

@@ -21,32 +21,11 @@
   padding-top: 4rem;
   padding-bottom: 2rem;
   margin-bottom: 1rem;
-
-}
-
-/* @media only screen and (min-width: 768px) {
-    .container {
-        max-width: 87%;
-    }
-} */
-.container {
   max-width: 75%;
   margin: 0 auto;
 }
 
-/* @media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-}
-@media (min-width: 690px) {
-    .container {
-        max-width: 690px;
-    }
-} */
-.container {
-  width: 100%;
-}
+
 
 .section_heading {
   font-family: Cinzel, serif;
@@ -58,13 +37,9 @@
   position: relative;
 }
 
-.mb-4 {
-  margin-bottom: 4rem !important;
-}
 
-.text-center {
-  text-align: center;
-}
+
+
 
 .paragraphs {
   font-family: Nunito Sans, sans-serif;
@@ -72,35 +47,13 @@
   font-weight: 400;
   font-size: 1rem !important;
   line-height: 180%;
+  margin-top: 1rem;
+  margin-bottom: 1.7rem
 }
 
-
-/* .mx-\[5rem\] {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    //trying  margin-bottom: -8rem;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.text-center{
+  text-align: center;
+}
 
 
 ::-webkit-scrollbar {
@@ -126,15 +79,6 @@ body {
   background: var(--bg);
 }
 
-
-
-
-/* .swiper-3d {
-    perspective: 1200px;
-}
-.swiper-horizontal {
-    touch-action: pan-y;
-} */
 
 
 .swiper-3d .swiper-wrapper {
@@ -166,19 +110,6 @@ body {
   position: relative;
 }
 
-/* @media (max-width: 500px) {
-    .swiper_container {
-      height: 47rem;
-    }
-    .swiper-slide {
-      width: 28rem !important;
-      height: 36rem !important;
-    }
-    .swiper-slide img {
-      width: 28rem !important;
-      height: 36rem !important;
-    }
-  } */
 
 .swiper-slide img {
   width: 33rem;
@@ -282,31 +213,10 @@ body {
   position: relative;
 }
 
-/* @media only screen and (min-width: 768px) {
-    .container {
-        max-width: 87%;
-    }
-} */
-
-/* .container {
-    max-width: 75%;
-    margin: 0 auto;
-} */
-/* @media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-}
-@media (min-width: 690px) {
-    .container {
-        max-width: 690px;
-    }
-} */
 .container {
   width: 100%;
   box-sizing: border-box;
   position: relative;
-
 }
 
 
@@ -333,17 +243,6 @@ body {
   margin-bottom: 1rem !important;
 }
 
-/* .mem_details h3 {
-    font-family: Actor, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 4rem;
-    color: black;
-} */
-
-
-
 .section_heading h2 {
   font-family: Cinzel, serif;
   font-style: normal;
@@ -358,9 +257,6 @@ body {
   text-align: center;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
 
 .flex-column {
   font-family: 'Cinzel', Tahoma, Geneva, Verdana, sans-serif;

@@ -1,51 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Hero.css';
-import { mainImage, logo } from '../../assets';
-const Hero = () => {
-    return (
+import logo from '../../assets/logo.png';
 
+const Hero = () => {
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setSidebarOpen(!sidebarOpen);
+    };
+
+    return (
         <section className='hero w-full'>
             <div className='highlighter'></div>
             <div className='container'>
                 <nav className='topbar'>
                     <div className='logo_container'>
-                        <img src={logo} alt="" />
+                        <img src={logo} alt="Logo" />
                     </div>
-                    <div className='toggle'>
-                        <img src="" alt="" />
-                    </div>
+                    <button class='toggle' onClick={toggleSidebar}>
+                    <img class={sidebarOpen ? 'toggle active' : 'toggle'} src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAPCAYAAAAYjcSfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABBSURBVHgB7dQhDgAwCANA4OOEl3ebn0BAVS8BRVLTYAASXOlvG1ncKeNi58nHcMPTm6GjDY/m3WTj1N5l0O/dUwd900LbvT92fgAAAABJRU5ErkJggg=='></img>
+                    </button>
                     <ul className="menu">
-                         <li><a href="#">The House</a></li>
-                         <li><a href="#">Dining</a></li>
-                         <li><a href="#">Events</a></li>
+                        <li><a href="#">The House</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="#">Events</a></li>
                     </ul>
                 </nav>
-                
+                <div className={`sidebar ${sidebarOpen ? 'sidebarshow' : ''}`} id='sidebar'>
+                    <ul>
+                    <li><a href="#">The House</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
             </div>
             <div className='main_heading'>An Architectural Gem Perched in the Murree Hills</div>
-
         </section>
-        // <section className="hero">
-        //     <div className='main-bg'>
-        //         <img src={mainImage} alt="" />
-        //     </div>
-        //     <div className="highlighter"></div> 
-        //     <div className="hero-content">
-        //         <img src={logo} alt="Logo" className="logo" />
-        //         <nav className="navbar">
-        //             <ul className="nav-links">
-        //                 <li><a href="#">The House</a></li>
-        //                 <li><a href="#">Dining</a></li>
-        //                 <li><a href="#">Events</a></li>
-        //             </ul>
-        //         </nav>
-        //         <div className="hero-text">
-        //             <h1>An Architectural Gem Perched in the Murree Hills</h1>
-                    
-        //         </div>
-        //     </div>
-        //     <div className="hero-container"></div>
-        // </section>
     );
 };
+
 export default Hero;

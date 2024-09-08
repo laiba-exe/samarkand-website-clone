@@ -4,8 +4,8 @@ import { mailicon, locationicon, callicon, logoBlue, specialbgdesk, insta, ascen
 
 const Footer = () => {
   return (
+    <section className='footer-section'>
     <div className="footer">
-
       <div className="contact-bar">
         <div className="container">
           <div className="footer_grid">
@@ -113,6 +113,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

@@ -2,27 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
 
 
-/* body {
-    font-family: 'Cinzel', serif;
-  } */
-
 .booking {
     font-family: 'Nunito Sans' sans-serif;
-    background-color: white; /* White background */
-    position: relative; /* Relative positioning */
-    z-index: 1; /* Ensure it appears above the background */
-    top: -100px; /* Adjust this value to overlap with the hero */
+    background-color: white;
+    position: relative; 
+    z-index: 1;
+    top: -100px; /* value for overlap with the hero pic*/
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 1rem;
-    padding: 1.5rem 2rem; /* Padding inside the container */
-    margin: 0 auto; /* Centering the container */
+    padding: 1.5rem 2rem; 
+    margin: 0 auto; 
     /* min-height: 90%; Default width */
     height: 10rem;
-    max-width: 900px; /* Max width for larger screens */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
-    border-radius: 1px; /* Rounded corners */
+    max-width: 900px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    border-radius: 1px;
     justify-items: center;
     align-items: center;
 }
@@ -64,8 +60,6 @@
 }
 
 
-
-
 .span_book img {
     width: 1.0rem;
     height: 1.1rem;
@@ -75,17 +69,6 @@ img, video {
     max-width: 100%;
     height: auto;
 }
-img, svg, video, canvas, audio, iframe, embed, object {
-    display: block;
-    vertical-align: middle;
-}
-
-
-
-
-
-
-
 
 
 .b_right {
@@ -113,12 +96,6 @@ img, svg, video, canvas, audio, iframe, embed, object {
   
     
 }
-
-
-
-
-
-
 
 
 
@@ -229,29 +206,9 @@ img, svg, video, canvas, audio, iframe, embed, object {
     display: flex;
 }
 
-
-
-
-
-
-/* .bookNow>.btn-priamry {
-    min-width: 10.8rem;
-    height: 5.2rem;
-    font-family: Nunito Sans;
-    background: var(--theme-color);
-    color: var(--white-color);
-    font-size: 1.5rem;
-    cursor: pointer;
-} */
 button, [role=button] {
     cursor: pointer;
 }
-
-
-
-
-
-
 
 
 button{
@@ -272,24 +229,22 @@ button{
 /* Media Queries for Responsive Design */
 @media only screen and (min-width: 992px) {
     .booking {
-        width: 80%; /* Adjusted width for larger screens */
+        width: 80%; 
     }
 }
-
 @media only screen and (min-width: 768px) {
     .booking {
-        width: 87%; /* Adjusted width for medium screens */
+        width: 87%; 
     }
 }
 
 @media only screen and (max-width: 600px) {
     .booking {
-        /* width: 90%;  */
-        padding: 1rem; /* Adjusted padding for smaller screens */
+        
+        padding: 1rem; 
     }
 }
 
-/* Global Styles */
 *, *:before, *:after {
     margin: 0;
     padding: 0;
@@ -297,7 +252,7 @@ button{
 }
 
 * {
-    text-decoration: none; /* Remove text decoration */
+    text-decoration: none; 
 }
 
 
